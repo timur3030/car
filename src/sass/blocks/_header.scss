@@ -1,0 +1,88 @@
+.header {
+  padding: 19px 0 16px 0;
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo,
+  &__address,
+  &__phone {
+    display: flex;
+  }
+  &__logo {
+    &-geely {
+      width: 171px;
+      height: 24px;
+    }
+    &-orbis {
+      width: 152px;
+      height: 27px;
+    }
+  }
+  &__devider {
+    width: 1px;
+    height: 33px;
+    background-color: #2f3d47;
+    margin: 0 25px;
+  }
+  &__address {
+    address {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      padding-left: 9px;
+      a {
+        color: #545454;
+        text-decoration: none;
+      }
+      &-img {
+        width: 13px;
+        height: 18px;
+      }
+    }
+  }
+  &__phone {
+    a {
+      color: #303030;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      padding-left: 4px;
+    }
+  }
+  &__btn {
+    display: block;
+    width: 175px;
+    height: 33px;
+    border: 1px solid #002d96;
+    background-color: #ffffff;
+    color: #002d96;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 0;
+    &:hover {
+      text-decoration: none;
+      background-color: #002d96;
+      color: #fff;
+    }
+  }
+  .hamburger {
+    display: none;
+    span {
+      display: block;
+      width: 68px;
+      height: 5px;
+      background: #000;
+      margin-bottom: 5px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

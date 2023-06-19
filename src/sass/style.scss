@@ -1,0 +1,22 @@
+@import "libs/bootstrap-reboot.min";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+// @import "base/variables";
+// @import "base/mixins";
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/car";
+@import "blocks/modal-form";
+@import "blocks/modal-menu";
+@import "blocks/media";
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+}

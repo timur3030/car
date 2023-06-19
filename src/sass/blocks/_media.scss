@@ -1,0 +1,277 @@
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .container {
+    max-width: 1140px;
+    .car {
+      &__name {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .promo {
+    &__label {
+      grid-row: 3/4;
+      grid-column: 1/2;
+      margin-left: 0;
+    }
+  }
+  .car {
+    &__wrapper {
+      margin: 0 auto;
+      grid-template-columns: auto;
+    }
+    &__color {
+      &-layer {
+        right: 7%;
+      }
+      &-wrapper {
+        grid-template-columns: 142px 550px;
+        justify-content: center;
+      }
+    }
+    &__price {
+      padding-top: 60px;
+      width: 718px;
+      margin: 0 auto;
+      &-benefits {
+        grid-template-columns: 1fr;
+      }
+      &-benefit_gift {
+        grid-column: 1/2;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .header {
+    &__logo {
+      display: grid;
+      grid-template-columns: auto;
+      row-gap: 10px;
+      justify-items: center;
+    }
+    &__devider {
+      display: none;
+    }
+  }
+  .promo {
+    &__menu {
+      grid-template-columns: auto;
+      row-gap: 10px;
+    }
+    &__slider {
+      &-inner {
+        .slick-arrow {
+          bottom: 50px;
+        }
+      }
+    }
+  }
+  .car {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .header {
+    &__links {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+  .promo {
+    padding-top: 60px;
+    &__menu {
+      &-block {
+        display: none;
+      }
+    }
+    &__title {
+      font-size: 35px;
+      margin-top: 0;
+    }
+    &__slider {
+      &-inner {
+        font-size: 25px;
+        .slick-arrow {
+          bottom: 80px;
+        }
+      }
+    }
+    &__offer {
+      left: 50px;
+      bottom: 50px;
+      &-form {
+        grid-template-columns: auto;
+      }
+      &-policy {
+        grid-column: 1/2;
+      }
+    }
+    &__label {
+      grid-row: 4/5;
+    }
+  }
+  .car {
+    &__price {
+      width: 520px;
+    }
+    &__color {
+      &-layer {
+        right: 5%;
+        border-radius: 30px;
+      }
+      &-wrapper {
+        grid-template-columns: 142px 350px;
+      }
+      &-box {
+        grid-template-columns: minmax(auto, 350px);
+      }
+      &-change {
+        div {
+          width: 350px;
+          img {
+            width: 420px;
+          }
+        }
+        .slick-slide {
+          transform: translateX(-49px);
+        }
+        .slick-dots {
+          bottom: 0;
+        }
+      }
+      &-label {
+        column-gap: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  .header {
+    padding-left: 10px;
+  }
+  .promo {
+    &__title {
+      font-size: 33px;
+    }
+    &__slider {
+      &-inner {
+        font-size: 18px;
+        .slick-arrow {
+          bottom: 80px;
+        }
+      }
+    }
+    &__offer {
+      left: 20px;
+      input,
+      &-btn {
+        width: 250px;
+      }
+      &-policy {
+        display: grid;
+        grid-template-columns: 250px;
+        row-gap: 10px;
+        input {
+          grid-row: 2/3;
+          text-align: right;
+        }
+      }
+    }
+    &__label {
+      display: none;
+    }
+  }
+  .car {
+    &__color {
+      &-wrapper {
+        justify-items: center;
+        grid-template-columns: 250px;
+        row-gap: 80px;
+      }
+      &-layer {
+        left: 0;
+        border-radius: 0%;
+        background: url(../img/layer.jpg) center center/cover no-repeat;
+      }
+      &-label {
+        grid-template-columns: 250px;
+        row-gap: 20px;
+        .arrow {
+          background-color: lightsteelblue;
+          border-radius: 5px;
+        }
+      }
+      &-change {
+        div {
+          width: 250px;
+          margin-top: 15px;
+          img {
+            width: 250px;
+          }
+        }
+        .slick-slide {
+          transform: translateX(-3px);
+        }
+
+        &-slider {
+          .slick-list {
+            margin: 0 auto;
+          }
+        }
+        .slick-dots {
+          background-color: lightsteelblue;
+          border-radius: 5px;
+          height: 30px;
+          width: 250px;
+          left: 0px;
+        }
+      }
+    }
+    &__price {
+      width: 250px;
+      padding-top: 0;
+      &-label {
+        width: 250px;
+      }
+    }
+    &__link {
+      width: 250px;
+    }
+    .modal-form {
+      grid-template-columns: 250px;
+      &-input {
+        width: 250px;
+      }
+      &-btn {
+        width: 250px;
+      }
+    }
+  }
+}
